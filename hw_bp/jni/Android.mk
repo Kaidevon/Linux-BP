@@ -1,0 +1,15 @@
+LOCAL_PATH := $(call my-dir)
+include $(CLEAR_VARS)
+LOCAL_MODULE := hw_bp
+
+APP_STL := c++_static
+LOCAL_CPPFLAGS += -std=c++17
+
+LOCAL_C_INCLUDES += $(LOCAL_PATH)/include
+
+# 分别指定，避免通配符问题
+LOCAL_SRC_FILES := \
+    src/main.cpp \
+    src/hw_breakpoint.c
+
+include $(BUILD_EXECUTABLE)
