@@ -7,9 +7,8 @@ LOCAL_CPPFLAGS += -std=c++17
 
 LOCAL_C_INCLUDES += $(LOCAL_PATH)/include
 
-# 分别指定，避免通配符问题
 LOCAL_SRC_FILES := \
-    src/main.cpp \
+    src/main.c \
     src/hw_breakpoint.c
 
 include $(BUILD_EXECUTABLE)

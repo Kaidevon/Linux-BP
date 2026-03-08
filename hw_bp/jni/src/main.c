@@ -14,6 +14,10 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+
 #include "hw_breakpoint.h"
 
 // Standard library header files
@@ -629,3 +633,7 @@ static void print_version(void) {
     printf("No warranty is provided within the scope permitted by law.\n");
     return;
 }
+
+#ifdef __cplusplus
+}
+#endif
